@@ -2,15 +2,16 @@ body {
 	background-color: #000;
 }
 
+.container {
+	padding: 0 20px;
+}
+
 .slider {
+	position: relative;
 	max-width: 1100px;
 	width: 100%;
 	overflow: hidden;
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 10;
+	margin: 20px auto;
 }
 
 .slider__body {
@@ -47,7 +48,7 @@ input[type="radio"] {
 	display: flex;
 	justify-content: flex-end;
 	z-index: 10;
-	margin: -20px 0px 0px 0px;
+	margin: -22px 0px 0px 0px;
 }
 
 .slider__titles {
@@ -71,7 +72,7 @@ input[type="radio"] {
 .slider__dott {
 	position: relative;
 	display: block;
-	padding: 5px 8px;
+	padding: 8px;
 	cursor: pointer;
 	z-index: 20;
 }
@@ -80,13 +81,13 @@ input[type="radio"] {
 	display: block;
 	width: 10px;
 	height: 10px;
-	background-color: rgb(60, 89, 187);
+	background-color: #6185ff;
 	border-radius: 50%;
-	border: 1px solid rgb(60, 89, 187);
+	border: 1px solid #6185ff;
 }
 
 .slider__dott:hover.slider__dott span {
-	background-color: rgb(255, 255, 255);
+	background-color: #fff;
 	border: 1px solid #fff;
 }
 
@@ -137,3 +138,50 @@ input[type="radio"] {
 #radio4:checked ~ .slider__bottom .slider__controls .slider__dott-4 span {
 	background-color: transparent;
 }
+
+@media (max-width: 1024px) {
+	.slider__body {
+		height: 500px;
+	}
+}
+
+@media (max-width: 768px) {
+	.slider__body {
+		height: 400px;
+	}
+}
+
+@media (max-width: 500px) {
+	.slider__body {
+		height: 300px;
+	}
+
+	.slider__bottom {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.slider__controls {
+		margin: 0px 0px 10px 0px;
+		align-self: center;
+	}
+}
+
+@media (max-width: 425px) {
+	.slider__body {
+		height: 250px;
+	}
+}
+
+@media (max-width: 375px) {
+	.slider__body {
+		height: 200px;
+	}
+}
+
+@media (max-width: 320px) {
+	.slider__body {
+		height: 150px;
+	}
+}
+
