@@ -28,12 +28,12 @@ section {
 html,
 body {
 	height: 100%;
-	min-width: $minwidth;
+	min-width: 100%;
 	scroll-behavior: smooth;
 }
 body {
 	line-height: 1.2em;
-	font-family: $fontfamily;
+	font-family: Arial, Helvetica, sans-serif;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -41,7 +41,7 @@ body {
 input,
 button,
 textarea {
-	font-family: $fontfamily;
+	font-family: Arial, Helvetica, sans-serif;
 }
 input::-ms-clear {
 	display: none;
